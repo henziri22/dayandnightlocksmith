@@ -1,12 +1,11 @@
 import { Flex } from "@kuma-ui/core";
-import Image from "next/image";
-import { appConfig } from "../../commons/appConfig";
-import { CallButton } from "../../components/CallButton";
-import { Overlay } from "../../components/Overlay";
-import { Section } from "../../components/Section";
-import { Logo } from "../../components/Logo";
+import Overlay from "../../components/Overlay";
+import Section from "../../components/Section";
+import appConfig from "../../../appConfig";
+import Logo from "../../components/Logo";
+import CallButton from "../../components/CallButton";
 
-export function SectionService() {
+export default function SectionService() {
   return (
     <Section>
       <Overlay transparent>

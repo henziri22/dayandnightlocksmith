@@ -4,7 +4,7 @@ type SectionProps = {
   bg?: string;
   children?: ReactNode;
 };
-export function Section({ children, bg }: SectionProps) {
+export default function Section({ children, bg }: SectionProps) {
   return (
     <section
       style={{

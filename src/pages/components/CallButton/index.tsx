@@ -1,8 +1,8 @@
 import PhoneOutlined from "@ant-design/icons/PhoneOutlined";
-import { appConfig } from "../../commons/appConfig";
+import appConfig from "../../../appConfig";
 import { Flex } from "@kuma-ui/core";
 
-export function CallButton() {
+export default function CallButton() {
   return (
     <Flex
       as="a"

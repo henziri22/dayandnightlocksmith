@@ -1,10 +1,10 @@
 import BulbOutlined from "@ant-design/icons/BulbOutlined";
 import { Flex } from "@kuma-ui/core";
-import { appConfig } from "../../commons/appConfig";
-import { Overlay } from "../../components/Overlay";
-import { Section } from "../../components/Section";
+import Section from "../../components/Section";
+import appConfig from "../../../appConfig";
+import Overlay from "../../components/Overlay";
 
-export function SectionAutomtiveService() {
+export default function SectionAutomtiveService() {
   return (
     <Section bg="section2.webp">
       <Overlay>

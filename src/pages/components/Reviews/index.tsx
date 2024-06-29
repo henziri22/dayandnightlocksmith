@@ -1,7 +1,7 @@
 import { Flex } from "@kuma-ui/core";
 import Image from "next/image";
 
-export function Reviews() {
+export default function Reviews() {
   return (
     <Flex gap={20} justify="center" alignItems="center">
       <Image src="/thumb.webp" alt="1" width={100} height={75} />

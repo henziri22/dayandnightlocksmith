@@ -1,10 +1,11 @@
 import { Flex } from "@kuma-ui/core";
-import { Section } from "../../components/Section";
-import { appConfig } from "../../commons/appConfig";
-import { Overlay } from "../../components/Overlay";
-import UnlockOutlined from "@ant-design/icons/UnlockOutlined";
 
-export function SectionResidentialService() {
+import UnlockOutlined from "@ant-design/icons/UnlockOutlined";
+import Section from "../../components/Section";
+import Overlay from "../../components/Overlay";
+import appConfig from "../../../appConfig";
+
+export default function SectionResidentialService() {
   return (
     <Section bg="section2.webp">
       <Overlay>

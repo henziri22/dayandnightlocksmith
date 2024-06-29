@@ -1,7 +1,7 @@
 import { Flex } from "@kuma-ui/core";
-import { CallButton } from "../../components/CallButton";
+import CallButton from "../../components/CallButton";
 
-export function FloatFooter() {
+export default function FloatFooter() {
   return (
     <Flex
       style={{

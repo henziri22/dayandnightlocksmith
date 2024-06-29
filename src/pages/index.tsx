@@ -1,13 +1,13 @@
 import { Inter } from "next/font/google";
 import Head from "next/head";
-import { Section } from "./components/Section";
-import { FloatFooter } from "./features/FloatFooter";
-import { Footer } from "./features/Footer";
-import { Header } from "./features/Header";
-import { SectionAutomtiveService } from "./features/SectionAutomtiveService";
-import { SectionFirst } from "./features/SectionFirst";
-import { SectionResidentialService } from "./features/SectionResidentialService";
-import { SectionService } from "./features/SectionService";
+import Header from "./features/Header";
+import SectionFirst from "./features/SectionFirst";
+import Section from "./components/Section";
+import SectionService from "./features/SectionService";
+import SectionResidentialService from "./features/SectionResidentialService";
+import SectionAutomtiveService from "./features/SectionAutomtiveService";
+import Footer from "./features/Footer";
+import FloatFooter from "./features/FloatFooter";
 
 const inter = Inter({ subsets: ["latin"] });
 

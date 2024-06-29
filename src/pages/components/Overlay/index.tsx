@@ -6,7 +6,7 @@ type OverlayProps = {
   transparent?: boolean;
 };
 
-export function Overlay({ children, transparent }: OverlayProps) {
+export default function Overlay({ children, transparent }: OverlayProps) {
   return (
     <Flex
       flexDirection="column"

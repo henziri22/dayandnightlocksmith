@@ -1,13 +1,12 @@
-import Image from "next/image";
-import { Reviews } from "../../components/Reviews";
-import { Section } from "../../components/Section";
 import { Flex } from "@kuma-ui/core";
-import { appConfig } from "../../commons/appConfig";
-import { Overlay } from "../../components/Overlay";
-import { CallButton } from "../../components/CallButton";
-import { Logo } from "../../components/Logo";
+import CallButton from "../../components/CallButton";
+import Logo from "../../components/Logo";
+import Overlay from "../../components/Overlay";
+import Reviews from "../../components/Reviews";
+import Section from "../../components/Section";
+import appConfig from "../../../appConfig";
 
-export function SectionFirst() {
+export default function SectionFirst() {
   return (
     <Section bg="section1.webp">
       <Overlay>

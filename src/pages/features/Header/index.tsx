@@ -1,8 +1,9 @@
 import { Flex } from "@kuma-ui/core";
-import { appConfig } from "../../commons/appConfig";
-import PhoneOutlined from "@ant-design/icons/PhoneOutlined";
 
-export function Header() {
+import PhoneOutlined from "@ant-design/icons/PhoneOutlined";
+import appConfig from "../../../appConfig";
+
+export default function Header() {
   return (
     <Flex
       justify="center"

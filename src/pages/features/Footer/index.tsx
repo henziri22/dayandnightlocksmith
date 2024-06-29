@@ -1,7 +1,7 @@
 import { Flex } from "@kuma-ui/core";
-import { appConfig } from "../../commons/appConfig";
+import appConfig from "../../../appConfig";
 
-export function Footer() {
+export default function Footer() {
   return (
     <Flex
       padding={20}
