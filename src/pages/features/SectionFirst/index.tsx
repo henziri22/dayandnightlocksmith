@@ -4,9 +4,12 @@ import Logo from "../../components/Logo";
 import Overlay from "../../components/Overlay";
 import Reviews from "../../components/Reviews";
 import Section from "../../components/Section";
-import appConfig from "../../../appConfig";
+import appConfig, { AppConfigKeys, getAppConfig } from "../../../appConfig";
+import { DomainContext } from "../../DomainContext";
+import { useContext } from "react";
 
 export default function SectionFirst() {
+  const { domain } = useContext(DomainContext);
   return (
     <Section bg="section1.webp">
       <Overlay>
@@ -19,10 +22,10 @@ export default function SectionFirst() {
           textAlign="center"
           fontSize={appConfig.fontSize}
         >
-          {appConfig.name} is here to provide you with the peace of mind you
-          need when it comes to your security. We're a reliable and experienced
-          locksmith company, offering services that range from key replacements
-          to lock installations. Trust us to keep you safe!
+          {getAppConfig(domain).name} is here to provide you with the peace of
+          mind you need when it comes to your security. We're a reliable and
+          experienced locksmith company, offering services that range from key
+          replacements to lock installations. Trust us to keep you safe!
         </Flex>
       </Overlay>
     </Section>

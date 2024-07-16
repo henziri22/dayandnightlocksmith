@@ -1,9 +1,12 @@
 import { Flex } from "@kuma-ui/core";
 
 import PhoneOutlined from "@ant-design/icons/PhoneOutlined";
-import appConfig from "../../../appConfig";
+import { useContext } from "react";
+import appConfig, { getAppConfig } from "../../../appConfig";
+import { DomainContext } from "../../DomainContext";
 
 export default function Header() {
+  const { domain } = useContext(DomainContext);
   return (
     <Flex
       justify="center"
@@ -16,8 +19,11 @@ export default function Header() {
       gap={10}
     >
       <PhoneOutlined />
-      <a href={`tel:${appConfig.phone}`} aria-label="call me now button">
-        Call now {appConfig.phone}
+      <a
+        href={`tel:${getAppConfig(domain).phone}`}
+        aria-label="call me now button"
+      >
+        Call now {getAppConfig(domain).phone}
       </a>
     </Flex>
   );

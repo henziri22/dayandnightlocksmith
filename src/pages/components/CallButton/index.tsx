@@ -1,12 +1,15 @@
 import PhoneOutlined from "@ant-design/icons/PhoneOutlined";
-import appConfig from "../../../appConfig";
+import appConfig, { getAppConfig } from "../../../appConfig";
 import { Flex } from "@kuma-ui/core";
+import { useContext } from "react";
+import { DomainContext } from "../../DomainContext";
 
 export default function CallButton() {
+  const { domain } = useContext(DomainContext);
   return (
     <Flex
       as="a"
-      href={`tel:${appConfig.phone}`}
+      href={`tel:${getAppConfig(domain).phone}}`}
       color="white"
       fontSize={appConfig.fontSize}
       textAlign="center"
