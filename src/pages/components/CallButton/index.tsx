@@ -2,7 +2,7 @@ import PhoneOutlined from "@ant-design/icons/PhoneOutlined";
 import { Flex } from "@kuma-ui/core";
 import { useContext } from "react";
 import appConfig, { getAppConfig } from "../../../appConfig";
-import  DomainContext  from "../DomainContext";
+import  DomainContext  from "../../../DomainContext";
 
 export default function CallButton() {
   const { domain } = useContext(DomainContext);

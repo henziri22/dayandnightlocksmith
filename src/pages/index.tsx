@@ -11,7 +11,7 @@ import SectionFirst from "./features/SectionFirst";
 import SectionResidentialService from "./features/SectionResidentialService";
 import SectionService from "./features/SectionService";
 import { useEffect } from "react";
-import  DomainContext  from "./components/DomainContext";
+import  DomainContext  from "../DomainContext";
 
 type Props = {
   domain: AppConfigKeys;
