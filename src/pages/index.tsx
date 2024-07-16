@@ -18,7 +18,9 @@ type Props = {
 };
 
 export const getServerSideProps = (async (context) => {
-  const domain = context.query.domain as AppConfigKeys;
+  const domain: AppConfigKeys = context.req.headers[
+    "x-forwarded-host"
+  ] as AppConfigKeys;
   return {
     props: {
       domain,
