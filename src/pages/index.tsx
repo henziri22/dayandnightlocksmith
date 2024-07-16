@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import Head from "next/head";
 import { AppConfigKeys, getAppConfig } from "../appConfig";
 import Section from "./components/Section";
-import { DomainContext } from "./DomainContext";
 import FloatFooter from "./features/FloatFooter";
 import Footer from "./features/Footer";
 import Header from "./features/Header";
@@ -12,6 +11,7 @@ import SectionFirst from "./features/SectionFirst";
 import SectionResidentialService from "./features/SectionResidentialService";
 import SectionService from "./features/SectionService";
 import { useEffect } from "react";
+import { DomainContext } from "./components/DomainContext";
 
 type Props = {
   domain: AppConfigKeys;

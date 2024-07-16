@@ -3,7 +3,7 @@ import { Flex } from "@kuma-ui/core";
 import PhoneOutlined from "@ant-design/icons/PhoneOutlined";
 import { useContext } from "react";
 import appConfig, { getAppConfig } from "../../../appConfig";
-import { DomainContext } from "../../DomainContext";
+import { DomainContext } from "../../components/DomainContext";
 
 export default function Header() {
   const { domain } = useContext(DomainContext);

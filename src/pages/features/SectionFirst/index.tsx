@@ -1,12 +1,12 @@
 import { Flex } from "@kuma-ui/core";
+import { useContext } from "react";
+import appConfig, { getAppConfig } from "../../../appConfig";
 import CallButton from "../../components/CallButton";
 import Logo from "../../components/Logo";
 import Overlay from "../../components/Overlay";
 import Reviews from "../../components/Reviews";
 import Section from "../../components/Section";
-import appConfig, { AppConfigKeys, getAppConfig } from "../../../appConfig";
-import { DomainContext } from "../../DomainContext";
-import { useContext } from "react";
+import { DomainContext } from "../../components/DomainContext";
 
 export default function SectionFirst() {
   const { domain } = useContext(DomainContext);
