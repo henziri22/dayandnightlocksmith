@@ -1,7 +1,7 @@
 import { Flex } from "@kuma-ui/core";
 import { useContext } from "react";
 import appConfig, { getAppConfig } from "../../../appConfig";
-import { DomainContext } from "../../components/DomainContext";
+import  DomainContext  from "../../components/DomainContext";
 
 export default function Footer() {
   const { domain } = useContext(DomainContext);

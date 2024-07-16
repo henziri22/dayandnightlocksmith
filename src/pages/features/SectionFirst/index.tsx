@@ -6,7 +6,7 @@ import Logo from "../../components/Logo";
 import Overlay from "../../components/Overlay";
 import Reviews from "../../components/Reviews";
 import Section from "../../components/Section";
-import { DomainContext } from "../../components/DomainContext";
+import  DomainContext  from "../../components/DomainContext";
 
 export default function SectionFirst() {
   const { domain } = useContext(DomainContext);
