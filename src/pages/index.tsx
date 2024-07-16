@@ -11,16 +11,17 @@ import SectionFirst from "./features/SectionFirst";
 import SectionResidentialService from "./features/SectionResidentialService";
 import SectionService from "./features/SectionService";
 import { useEffect } from "react";
-import  DomainContext  from "../DomainContext";
+import DomainContext from "../DomainContext";
 
 type Props = {
   domain: AppConfigKeys;
 };
 
-export const getServerSideProps = (async () => {
+export const getServerSideProps = (async (context) => {
+  const domain = context.query.domain as AppConfigKeys;
   return {
     props: {
-      domain: "dayandnightlocksmith.com",
+      domain,
     },
   };
 }) satisfies GetServerSideProps<Props>;
