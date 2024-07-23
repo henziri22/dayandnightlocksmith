@@ -9,10 +9,10 @@ export default function Logo() {
   return (
     <Flex justify="center" alignItems="center">
       <Image
-        src={getAppConfig(domain).logo}
+        src={getAppConfig(domain).logo.path}
         alt="logo"
-        width={280}
-        height={150}
+        width={getAppConfig(domain).logo.width}
+        height={getAppConfig(domain).logo.height}
       />
     </Flex>
   );
