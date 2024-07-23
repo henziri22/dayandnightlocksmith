@@ -3,11 +3,11 @@ export default {
 };
 
 const configByDomain = {
-  "www.dayandnightlocksmith.com": {
+  "dayandnightlocksmith.com": {
     name: "Day And Night LockSmith",
     phone: "818-571-3096",
   },
-  "www.hlocksmith.com": {
+  "hlocksmith.com": {
     name: "Harkins Lockmsith",
     phone: "323-740-3836",
   },
@@ -16,5 +16,5 @@ const configByDomain = {
 export type AppConfigKeys = keyof typeof configByDomain;
 
 export const getAppConfig = (key: AppConfigKeys) => {
-  return configByDomain[key] || configByDomain["www.dayandnightlocksmith.com"];
+  return configByDomain[key] || configByDomain["dayandnightlocksmith.com"];
 };
