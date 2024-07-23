@@ -1,10 +1,19 @@
 import { Flex } from "@kuma-ui/core";
 import Image from "next/image";
+import { useContext } from "react";
+import DomainContext from "../../../DomainContext";
+import { getAppConfig } from "../../../appConfig";
 
 export default function Logo() {
+  const { domain } = useContext(DomainContext);
   return (
     <Flex justify="center" alignItems="center">
-      <Image src="/logo.png" alt="logo" width={280} height={150} />
+      <Image
+        src={getAppConfig(domain).logo}
+        alt="logo"
+        width={280}
+        height={150}
+      />
     </Flex>
   );
 }
